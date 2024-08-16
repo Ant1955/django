@@ -1,11 +1,9 @@
 from django.urls import path
 from . import views
-from django.http import HttpResponse
+
 
 urlpatterns = [
-    path('', views.index)
+    path('', views.index),
+    path('new', views.new)
 ]
 
-
-def index(request):
-    return HttpResponse("<h1>Это мой первый проект на Django</h1>")
